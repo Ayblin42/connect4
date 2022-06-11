@@ -6,7 +6,7 @@
 /*   By: ayblin <ayblin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/10 21:28:12 by ayblin            #+#    #+#             */
-/*   Updated: 2022/06/10 23:42:28 by ayblin           ###   ########.fr       */
+/*   Updated: 2022/06/11 17:52:22 by ayblin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static void	horizontal_case_display(t_data *data, int y)
 	while (i < data->col)
 	{
 		ft_putstr_fd("| ", 1);
-		ft_putchar_fd(data->grid[0][0], 1);
+		ft_putchar_fd(data->grid[y][i], 1);
 		ft_putstr_fd(" ", 1);
 		i++;
 	}

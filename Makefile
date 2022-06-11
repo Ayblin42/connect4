@@ -4,7 +4,9 @@ FLAGS		=	-Wall -Werror -Wextra -g3
 
 RM			=	rm -f
 
-SRCS		=	$(addprefix srcs/, 						\
+SRCS		=	gnl/get_next_line_utils.c				\
+				gnl/get_next_line.c						\
+				$(addprefix srcs/, 						\
 				display.c								\
 				main.c)
 
