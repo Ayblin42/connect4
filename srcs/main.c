@@ -6,7 +6,7 @@
 /*   By: ayblin <ayblin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/10 21:06:49 by ayblin            #+#    #+#             */
-/*   Updated: 2022/06/11 18:29:44 by ayblin           ###   ########.fr       */
+/*   Updated: 2022/06/11 19:13:17 by ayblin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int	ft_add_coin(char coin, t_data *data, int col)
 	int i =data->line - 1;
 	if (col > data->col -1)
 	{
-		ft_putstr_fd("colonne invalid :",2);
+		ft_putstr_fd("colonne invalid .\n",2);
 		return 0;
 	}
 	while(i >= 0)
@@ -94,7 +94,6 @@ int	main(int ac, char **av)
 				break ;
 			free(tmp);
 		}
-		printf("EIOJIEGIJ%d\n",1);
 		if (ft_add_coin('1',data,ft_atoi(tmp)) == 1)
 			display(data);
 		free(tmp);

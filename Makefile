@@ -8,6 +8,7 @@ SRCS		=	gnl/get_next_line_utils.c				\
 				gnl/get_next_line.c						\
 				$(addprefix srcs/, 						\
 				display.c								\
+				check_direction.c						\
 				main.c)
 
 
